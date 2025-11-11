@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="estilo-cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <main>
+        <form>
+
+            <div class="logo">
+                <img src="./img/logopng.png" alt="logopng">
+            </div>
+
+            <h2>Cadastro de Produtos</h2>
+
+            <div class="box-cadastro">
+                <label for="codProduto">Cod.Prod.</label>
+                <input type="text" id="codProduto" name="codProduto" placeholder="Digite o código">
+            </div>
+
+            <div class="box-cadastro">
+                <label for="tipoGarrafa">Tipo de Garrafa</label>
+                <select id="tipoGarrafa" name="tipoGarrafa">
+                    <option value="">Selecione...</option>
+                    <option value="5L">Garrafa 5L</option>
+                    <option value="10L">Garrafa 10L</option>
+                    <option value="20L">Garrafa 20L</option>
+                </select>
+            </div>
+
+            <div class="box-cadastro">
+                <label for="descProduto">Descrição do prod.</label>
+                <input type="text" id="descricaoProduto" name="descricaoProduto" placeholder="Digite a descrição">
+            </div>
+
+            <div class="box-cadastro">
+                <label for="fabricante">Fabricante</label>
+                <select id="fabricante" name="fabricante">
+                    <option value="">Selecione...</option>
+                    <option value="indaia">Indaiá</option>
+                    <option value="cristal">Cristal</option>
+                    <option value="santaJoana">Santa Joana</option>
+                    <option value="prataVale">Prata do Vale</option>
+                </select>
+            </div>
+
+            <div class="box-cadastro">
+                <label for="precoVenda">Preço de Venda</label>
+                <input type="number" id="precoVenda" name="precoVenda" step="0.01" placeholder="R$ 0,00">
+            </div>
+
+            <div class="button-save">
+                <button><img src="./img/salvar.svg"> Salvar </button>
+                <button><img src="./img/cancelar.svg"> Cancelar </button>
+            </div>
+
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
